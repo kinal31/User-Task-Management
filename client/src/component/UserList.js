@@ -69,7 +69,7 @@ const UserList = () => {
               <h5>Sort By Value</h5>
               <Dropdown className=' container'>
                 <Dropdown.Toggle className='dropdown_btn btn-secondary' id="dropdown-basic">
-                  <i class="fa-solid fa-sort"></i>
+                  <i className="fa-solid fa-sort"></i>
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
                   <Dropdown.Item onClick={sortTasksUsername}>Name</Dropdown.Item>
