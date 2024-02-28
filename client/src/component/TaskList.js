@@ -84,9 +84,9 @@ const TaskList = () => {
             <div className='m-1'>
                 <div className='container d-flex justify-content-between'>
                     <div className="container mt-5 ">
-                        <div className="search col-lg-8">
+                        <div className="search col-lg-9">
                             <div className="input-group">
-                                <input type="search" className="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" onChange={(e)=>setSearch(e.target.value)}/>
+                                <input type="search" className="form-control rounded" placeholder="Search by user" aria-label="Search" aria-describedby="search-addon" onChange={(e)=>setSearch(e.target.value)}/>
                                 <button type="button" className="btn btn-secondary" data-mdb-ripple-init>search</button>
                             </div>
                         </div>

@@ -20,7 +20,8 @@ const Navbar = () => {
       <MDBNavbar expand='lg' light style={{backgroundColor: "#e3f2fd"}} >
       <MDBContainer fluid>
         <MDBNavbarBrand href='#'>
-        <img src={logo} width="30" height="30" alt=""/>UTM
+        <img src={logo} width="30" height="30" alt=""/>
+        <NavLink className="nav mx-3" style={{textDecoration: "none", color: "black"}} to='/'>UTM</NavLink>
         </MDBNavbarBrand>
         <MDBNavbarToggler
           type='button'

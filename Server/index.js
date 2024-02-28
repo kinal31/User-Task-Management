@@ -5,6 +5,7 @@ const dotenv = require("dotenv")
 dotenv.config()
 const bodyParser = require("body-parser")
 const router = require("./router/route")
+const {connectDB} =require("./config/db")
 
 const PORT = 5000
 const app = express()
@@ -24,9 +25,14 @@ app.use('/',router)
 //     })
 // })
 
-mongoose.connect("mongodb://127.0.0.1:27017/usertask")
-.then(()=>{
-    console.log("MongoDB connected")
-    app.listen(PORT, ()=> console.log("server is running"))
-})
-.catch((err)=> console.log(err))
+// mongoose.connect("mongodb://127.0.0.1:27017/usertask")
+// .then(()=>{
+//     console.log("MongoDB connected")
+//     app.listen(PORT, ()=> console.log("server is running"))
+// })
+// .catch((err)=> console.log(err))
+
+connectDB().then(()=>{
+    app.listen(PORT, ()=> console.log("Server is running"))
+}
+)
