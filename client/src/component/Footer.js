@@ -6,7 +6,7 @@ const Footer = () => {
             <footer className="bg-body-tertiary text-center text-lg-start fixed-bottom" >
                 
                 <div className="text-center p-2" >
-                    © 2024 Kinal Kotheeya All rights reserved
+                    © 2024  All rights reserved
                 </div>
                 
             </footer>
